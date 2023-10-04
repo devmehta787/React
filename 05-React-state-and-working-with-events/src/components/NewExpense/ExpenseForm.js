@@ -2,42 +2,42 @@ import React, { useState } from "react";
 
 import "./ExpenseForm.css";
 
-const ExpenseForm = () => {
-  // can also be done by using only one state
+// const ExpenseForm = (props) => {
+// can also be done by using only one state
 
-  //   const [userInput, setUserInput] = useState({
-  //     title: "",
-  //     amount: "",
-  //     date: "",
-  //   });
+//   const [userInput, setUserInput] = useState({
+//     title: "",
+//     amount: "",
+//     date: "",
+//   });
 
-  //   const titleChangehandler = (event) => {
-  //     // normal way to use state
+//   const titleChangehandler = (event) => {
+//     // normal way to use state
 
-  //     // setUserInput({
-  //     //   ...userInput,
-  //     //   title: event.target.value,
-  //     // });
+//     // setUserInput({
+//     //   ...userInput,
+//     //   title: event.target.value,
+//     // });
 
-  //     //   alternative way to use state (when you depend on previous state)
+//     //   alternative way to use state (when you depend on previous state)
 
-  //     setUserInput((prevState) => {
-  //       return { ...prevState, title: event.target.value };
-  //     });
-  //   };
-  //   const amountChangehandler = (event) => {
-  //     setUserInput({
-  //       ...userInput,
-  //       amount: event.target.value,
-  //     });
-  //   };
-  //   const dateChangehandler = (event) => {
-  //     setUserInput({
-  //       ...userInput,
-  //       date: event.target.value,
-  //     });
-  //   };
-
+//     setUserInput((prevState) => {
+//       return { ...prevState, title: event.target.value };
+//     });
+//   };
+//   const amountChangehandler = (event) => {
+//     setUserInput({
+//       ...userInput,
+//       amount: event.target.value,
+//     });
+//   };
+//   const dateChangehandler = (event) => {
+//     setUserInput({
+//       ...userInput,
+//       date: event.target.value,
+//     });
+//   };
+const ExpenseForm = (props) => {
   const [enteredTitle, setTitle] = useState("");
   const [enteredAmount, setAmount] = useState("");
   const [enteredDate, setDate] = useState("");
@@ -61,7 +61,8 @@ const ExpenseForm = () => {
       amount: enteredAmount,
       date: new Date(enteredDate),
     };
-    console.log(expenseData);
+    // console.log(expenseData);
+    props.onSaveExpenseData(expenseData);
     setAmount("");
     setTitle("");
     setDate("");
