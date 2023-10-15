@@ -1,0 +1,72 @@
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 60%;
+    margin: 50px auto;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: black;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.row{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    width: 70%;
+    margin: 10px 10px;
+}
+.text-input{
+    width: 100%;
+    border: none;
+    background-color: #282c34;
+    color: #fff;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+.row select{
+    width: 40%;
+    border: none;
+    color: #fff;
+    background-color: #282c34;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+.date-time{
+    width: 40%;
+    padding: 10px;
+    border: none;
+    color: #fff;
+    background-color: #282c34;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+.add{
+    /* align item to the bottomm right of the div it is in */
+    align-self: flex-end;
+    width: 100px;
+    display: flex;
+    padding-right: 15%;
+    flex-direction: column-reverse;
+}
+
+.add-button{
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #282c34;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+}
