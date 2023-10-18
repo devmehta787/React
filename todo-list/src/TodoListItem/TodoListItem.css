@@ -12,6 +12,30 @@
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
+.list-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.list-header-text{
+    font-size: 1.5rem;
+    font-weight: bold;
+    width: 50%;
+}
+.list-header-action{
+    display: flex;
+    width: 330px;;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: 2px;
+    color: #fff;
+    font-size: 1rem;
+    flex-direction: row;
+    justify-content: space-between;
+}
 
 .list-item{
     display: flex;
